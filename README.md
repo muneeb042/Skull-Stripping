@@ -7,3 +7,7 @@ Dataset link : https://brainweb.bic.mni.mcgill.ca/selection_normal.html
 Dataset is in the rawb format, raw byte (unsigned) : One (unsigned) byte is used for each voxel, and the data is scaled such that it will use the entire 0...255 range of values. 
 
 RAWB (raw binary) image to a PGM (Portable Gray Map) file Conversion is done.
+
+Threshold the pgm files by taking mean value as threshold.
+
+Skull strip the pgm files.
