@@ -1,5 +1,5 @@
 # Skull-Stripping
-Skull stripping is a process of the brain tissue segmentation (cortex and cerebellum) from the surrounding region (skull and non brain area). It is also a very important preprocessing 
+Skull stripping is the first step in brain tissue segmentation (cortex and cerebellum) from the surrounding region (skull and non brain area). It is also a very important preprocessing 
 step which precedes further analysis in case of many MRI neurological images (such as image registration or tissue classification).
 
 Dataset link : https://brainweb.bic.mni.mcgill.ca/selection_normal.html
