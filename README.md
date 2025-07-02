@@ -9,5 +9,6 @@ Dataset is in the rawb format, raw byte (unsigned) : One (unsigned) byte is used
 RAWB (raw binary) image to a PGM (Portable Gray Map) file Conversion is done.
 
 Threshold the pgm files by taking mean value as threshold.
+![image](https://github.com/user-attachments/assets/8bf80601-f363-42e3-92dd-204743076792)
 
 Skull strip the pgm files.
