@@ -33,6 +33,7 @@ Used Google Colab's `drive.mount()` to read/write data from Google Drive.
 - Performed region growing from a seed pixel.
 - Grew regions based on intensity similarity (threshold = 100).
 - Saved grown regions as output images.
+- Didn't work on all the examples as we needed to change seed pixel for each image and it was very difficult to get the optimal seed pixel value for each image.
 - ![image](https://github.com/user-attachments/assets/ec9a1cea-b13d-42eb-9b8d-b71f4addecbd)
 
 
@@ -63,18 +64,19 @@ Used Google Colab's `drive.mount()` to read/write data from Google Drive.
 
 ---
 
-8. **Skull Removal Using Boundary Mask**
+8. **Skull Removal Using Boundary Mask (Experimentation)**
 
 - Retained pixel values within detected brain boundary.
 - Applied morphological operations (opening, closing) to clean binary mask.
 - Extracted brain contours and applied them as a mask.
 - Final brain-extracted image was generated.
+- This method didn't work with majority of brain MRI's
 - ![image](https://github.com/user-attachments/assets/a7e5e952-7c13-4dc1-b1e2-39116191aa7d)
 
 
 ---
 
-9. **Row-wise Skull Stripping Algorithm (Full Dataset)**
+9. **Row-wise Skull Stripping Algorithm (Final Algorithm)**
 
 - For each row in each slice:
   - Scanned left-to-right and right-to-left.
@@ -82,6 +84,7 @@ Used Google Colab's `drive.mount()` to read/write data from Google Drive.
   - Set outside skull regions to zero.
 
 - This was done for **all 181 slices**.
+- This worked for majority of the slices.
 
 ---
 
