@@ -1,14 +1,6 @@
 
 Dataset link : https://brainweb.bic.mni.mcgill.ca/selection_normal.html
 
-Dataset is in the rawb format, raw byte (unsigned) : One (unsigned) byte is used for each voxel, and the data is scaled such that it will use the entire 0...255 range of values. 
-
-RAWB (raw binary) image to a PGM (Portable Gray Map) file Conversion is done.
-
-Threshold the pgm files by taking mean value as threshold.
-
-
-
 # Skull Stripping on Brain MRI Slices
 
 This project implements a basic **skull stripping pipeline** for brain MRI data using Python in Google Colab. The process involves reading a raw binary 3D MRI volume, converting it into 2D slices, applying thresholding, performing row-wise intensity analysis, and generating skull-stripped images.
@@ -51,7 +43,7 @@ Used Google Colab's `drive.mount()` to read/write data from Google Drive.
 - Calculated mean pixel intensity for each slice.
 - Set pixels below mean to zero (background suppression).
 - Saved thresholded slices.
-- ![image](https://github.com/user-attachments/assets/306331af-3618-474c-bfdf-87bcbe078095) Thresholded Image and original Image
+- ![image](https://github.com/user-attachments/assets/306331af-3618-474c-bfdf-87bcbe078095) Thresholded Image on top and original Image on bottom
 
 
 ---
